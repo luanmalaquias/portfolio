@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Portfólio</title>
+
+	<!--Html Icon-->
+	<link rel="shortcut icon" type="imagex/png" href="./img/laptop.svg">
+
+	<!--Local CSS-->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!--Load Bootstrap, Bootstrap Icons and FontAwessome Icons-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="utils/fontawesome/css/all.css" rel="stylesheet">
+
+	<!--Load Jquerry and Pages-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script>
+		$(function () {
+			$('#home').load("templates/home.html");
+			$('#curriculo').load("templates/curriculo.html");
+			$('#projetos').load("templates/projetos.html");
+			$('#contato').load("templates/contato.html");
+			$('#sobre').load("templates/sobre.html");
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid position-absolute" style="height: 100%;">
+
+		<div id="inicial" class="row" style="height: 100%;">
+			<div class="d-sm-none d-lg-block col-lg-4" id="photoCol"></div>
+			<div id="home" class="col-sm-12 col-lg-8"></div>
+		</div>
+
+		<div id="curriculo" class="row my-5" style="height: max-content;"></div>
+		<div id="projetos" class="row my-5" style="height: max-content;"></div>
+		<div id="contato" class="row t-5" style="height: 100%; background-color: black; color: #ffffff;"></div>
+		<div id="sobre" class="row" style="height: 100%; background-color: black; color: #ffffff;"></div>
+
+	</div>
+
+	<!--Local js-->
+	<script src="./js/script.js"></script>
+
+</body>
+
+</html>

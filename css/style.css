@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#photoCol{
+    background-image: url('../img/photo-purple-one.png'); 
+    background-position: top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+
+#myPortfolio{
+    box-shadow: 5px 5px 1px yellow;
+}
+
+.bgDarkfgWhite{
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0px !important;
+}
+
+.btnNav{    
+    width: initial;
+    transition: 0.2s all !important;
+    text-decoration: none !important;
+}
+
+.btnNav:hover{
+    letter-spacing: 5px !important;
+    font-weight: bolder !important;
+}
+
+#aboutMeBtn{
+    letter-spacing: 5px;
+    background-color: #05bcdc !important;
+    color: white !important;
+    border-radius: 0px !important;
+    transition: 0.2s all;
+}
+
+#aboutMeBtn:hover{   
+    background-color: aqua !important; 
+    color: black !important;
+    font-weight: bolder;
+    box-shadow: 0px 0px 20px aqua;
+    transition: 0.2s all;
+}
+
+#icons{
+    font-size: 1.3rem;
+    transition: 0.2s all;
+}
+
+#icons:hover{
+    width: 2rem !important;
+    color: #05bcdc  !important; 
+}
+
+@keyframes size {
+    from {
+        width: 60px;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+#hrContato{
+    height: 3px; 
+    border-radius: 15px; 
+    background-color: white;
+    animation: size 1s infinite alternate;
+}
+
+
+
+.inputFormDark{
+    background-color: rgb(49, 49, 49) !important;
+    color: rgb(207, 207, 207) !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+#divCurriculo{
+    background-color: rgb(29, 29, 29);
+    color: rgb(204, 204, 204);
+    transition: 0.2s all;
+}
+
+#divCurriculo:hover{
+    box-shadow: 20px 20px 1px yellow;
+    transform: scale(102%);
+}
+
+#rowCvIcons{
+    border-radius: 50px;
+    transition: 0.2s all;
+}
+#rowCvIcons:hover{
+    box-shadow: 10px 10px 1px yellow;
+    transform: scale(102%);
+}
+
+.projetoNome{
+    color: #05bcdc;
+}
+
+.imgProjeto{
+    border-radius: 10px;
+    transition: 0.2s all;
+    filter: blur(2px) brightness(0.5);
+}
+
+.imgProjeto:hover{
+    box-shadow: 10px 10px 5px #353535;
+    filter: none;
+    transform: scale(107%);
+}
