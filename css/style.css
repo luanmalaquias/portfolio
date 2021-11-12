@@ -3,7 +3,7 @@ html {
 }
 
 #photoCol{
-    background-image: url('../img/photo-purple-one.png'); 
+    background-image: url('img/photo-purple-one.png'); 
     background-position: top; 
     background-repeat: no-repeat;
     background-size: cover;
