@@ -48,7 +48,7 @@ html {
 }
 
 #icons{
-    font-size: 1.3rem;
+    font-size: 2rem;
     transition: 0.2s all;
 }
 
@@ -123,12 +123,16 @@ html {
         font-size: 1.7rem;
     }
 
+    #aboutMeBtn{
+        font-size: 2rem;
+    }
+
     #inicial{
         height: max-content !important;
     }
 
     .btnNav{
-        font-size: 30px !important;
+        font-size: 40px !important;
         background-color: #00000070 !important;
     }
 }
