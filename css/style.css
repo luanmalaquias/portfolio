@@ -3,7 +3,7 @@ html {
 }
 
 #photoCol{
-    background-image: url('img/photo-purple-one.png'); 
+    background-image: url('../img/photo-purple-one.png'); 
     background-position: top; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,4 +116,19 @@ html {
     box-shadow: 10px 10px 5px #353535;
     filter: none;
     transform: scale(107%);
+}
+
+@media (max-width: 1000px){
+    *{
+        font-size: 1.7rem;
+    }
+
+    #inicial{
+        height: max-content !important;
+    }
+
+    .btnNav{
+        font-size: 30px !important;
+        background-color: #00000070 !important;
+    }
 }
