@@ -132,7 +132,8 @@ html {
     }
 
     .btnNav{
-        font-size: 40px !important;
-        background-color: #00000070 !important;
+        height: 100px !important;
+        font-size: 100% !important;
+        background-color: #0000008a !important;
     }
 }
