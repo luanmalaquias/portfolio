@@ -136,4 +136,8 @@ html {
         font-size: 100% !important;
         background-color: #0000008a !important;
     }
+
+    #photoCol{
+        background-image: none;
+    }
 }
