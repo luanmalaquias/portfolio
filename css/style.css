@@ -1,63 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
-#photoCol{
-    background-image: url('../img/photo-purple-one.png'); 
-    background-position: top; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40%;
+* {
+    font-family: 'Nunito', sans-serif;
 }
 
-#myPortfolio{
-    box-shadow: 5px 5px 1px yellow;
+#div-navegacao{
+    background-color: rgba(235, 235, 235, 0.363);
+    backdrop-filter: blur(2px);
 }
 
-.bgDarkfgWhite{
-    background-color: black !important;
-    color: white !important;
-    border-radius: 0px !important;
+.nav-a {
+    color: #080538;
 }
 
-.btnNav{    
-    width: initial;
-    transition: 0.2s all !important;
-    text-decoration: none !important;
+.nav-a:hover {
+    text-decoration: none;
+    color: rgb(17, 0, 255);
 }
 
-.btnNav:hover{
-    letter-spacing: 5px !important;
-    font-weight: bolder !important;
-}
-
-#aboutMeBtn{
-    letter-spacing: 5px;
-    background-color: #05bcdc !important;
-    color: white !important;
-    border-radius: 0px !important;
-    transition: 0.2s all;
-}
-
-#aboutMeBtn:hover{   
-    background-color: aqua !important; 
-    color: black !important;
-    font-weight: bolder;
-    box-shadow: 0px 0px 20px aqua;
-    transition: 0.2s all;
+.btn-meus-projetos {
+    border: none !important;
+    background: linear-gradient(to right, rgb(17, 0, 255), rgb(234, 0, 255));
 }
 
 #icons{
-    font-size: 2rem;
+    font-size: 1.3rem;
     transition: 0.2s all;
 }
 
 #icons:hover{
     width: 2rem !important;
-    color: #05bcdc  !important; 
+    color: #3e48d6  !important; 
 }
 
-@keyframes size {
+ul{
+    list-style-type: "> ";
+}
+
+#hrContato{
+    height: 3px; 
+    border-radius: 15px; 
+    background-color: white;
+    animation: increase-size 1s infinite alternate;
+}
+
+
+
+@keyframes increase-size {
     from {
         width: 60px;
     }
@@ -65,14 +58,6 @@ html {
         width: 100px;
     }
 }
-
-#hrContato{
-    height: 3px; 
-    border-radius: 15px; 
-    background-color: white;
-    animation: size 1s infinite alternate;
-}
-
 
 
 .inputFormDark{
@@ -82,13 +67,13 @@ html {
     font-weight: bold !important;
 }
 
-#divCurriculo{
+#div-competencias{
     background-color: rgb(29, 29, 29);
     color: rgb(204, 204, 204);
     transition: 0.2s all;
 }
 
-#divCurriculo:hover{
+#div-competencias:hover{
     box-shadow: 2px 2px 0 #ccc,
                 4px 4px 0 #c9c9c9,
                 6px 6px 0 #bbb,
@@ -104,29 +89,38 @@ html {
     transform: scale(102%);
 }
 
-#rowCvIcons{
+#div-icons-competencias{
     border-radius: 50px;
-    transition: 0.2s all;
-}
-#rowCvIcons:hover{
-    box-shadow: 10px 10px 1px yellow;
-    transform: scale(102%);
 }
 
-.projetoNome{
-    color: #05bcdc;
+.nome-projeto{
+    color: #333333;
+    text-shadow: 0 0 40px #0004ff9d;
 }
 
-.imgProjeto{
+.img-projeto{
     border-radius: 10px;
-    transition: 0.2s all;
     filter: blur(2px) brightness(0.5);
 }
 
-.imgProjeto:hover{
+.img-projeto:hover{
     box-shadow: 0 10px 5px #353535;
     filter: none;
-    transform: scale(107%);
+}
+#img-foto{
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(117, 102, 255, 0.651);
+    animation: opacity-change 5s infinite;
+}
+
+@keyframes opacity-change {
+    0% {
+        box-shadow: 0 0 100px #7566ff34;
+    } 30% {
+        box-shadow: 0 0 100px #7566ffa6;
+    } 100% {
+        box-shadow: 0 0 100px #7566ff34;
+    }
 }
 
 @media (max-width: 1000px){
@@ -134,21 +128,11 @@ html {
         font-size: 1.7rem;
     }
 
-    #aboutMeBtn{
-        font-size: 2rem;
+    #btn-meus-projetos{
+        font-size: 2rem !important;
     }
 
-    #inicial{
-        height: max-content !important;
-    }
-
-    .btnNav{
-        height: 100px !important;
-        font-size: 100% !important;
-        background-color: #0000008a !important;
-    }
-
-    #photoCol{
-        background-image: none;
+    #nome{
+        font-weight: 600;
     }
 }
