@@ -1,0 +1,29 @@
+ul{
+    list-style-type: "> ";
+}
+
+#div-competencias{
+    background-color: rgb(29, 29, 29);
+    color: rgb(204, 204, 204);
+    transition: 0.2s all;
+}
+
+#div-competencias:hover{
+    box-shadow: 2px 2px 0 #ccc,
+                4px 4px 0 #c9c9c9,
+                6px 6px 0 #bbb,
+                8px 8px 0 #b9b9b9,
+                10px 10px 0 #aaa,
+                12px 12px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                2px 2px 3px rgba(0,0,0,.3),
+                6px 6px 5px rgba(0,0,0,.2),
+                10px 10px 10px rgba(0,0,0,.25),
+                20px 20px 10px rgba(0,0,0,.2),
+                40px 40px 20px rgba(0,0,0,.15);
+    transform: scale(102%);
+}
+
+#div-icons-competencias{
+    border-radius: 50px;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1000px){
+    *{
+        font-size: 1.7rem;
+    }
+
+    #home{
+        min-height: 100%;
+    }
+
+    #btn-meus-projetos{
+        font-size: 2rem !important;
+    }
+
+    #nome{
+        font-weight: 600;
+    }
+}

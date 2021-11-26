@@ -1,0 +1,14 @@
+.nome-projeto{
+    color: #333333;
+    text-shadow: 0 0 40px #0004ff9d;
+}
+
+.img-projeto{
+    border-radius: 10px;
+    filter: blur(2px) brightness(0.5);
+}
+
+.img-projeto:hover{
+    box-shadow: 0 10px 5px #353535;
+    filter: none;
+}

@@ -1,0 +1,14 @@
+.btn-meus-projetos {
+    border: none !important;
+    background: linear-gradient(to right, rgb(17, 0, 255), rgb(234, 0, 255));
+}
+
+#icons{
+    font-size: 1.3rem;
+    transition: 0.2s all;
+}
+
+#icons:hover{
+    width: 2rem !important;
+    color: #3e48d6  !important; 
+}

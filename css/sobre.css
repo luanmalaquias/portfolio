@@ -1,0 +1,15 @@
+@keyframes opacity-change {
+    0% {
+        box-shadow: 0 0 100px #7566ff34;
+    } 30% {
+        box-shadow: 0 0 100px #7566ffa6;
+    } 100% {
+        box-shadow: 0 0 100px #7566ff34;
+    }
+}
+
+#img-foto{
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(117, 102, 255, 0.651);
+    animation: opacity-change 5s infinite;
+}

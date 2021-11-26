@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+#div-navegacao{
+    background-color: rgba(235, 235, 235, 0.363);
+    backdrop-filter: blur(2px);
+}
+
+.nav-a {
+    color: #080538;
+}
+
+.nav-a:hover {
+    text-decoration: none;
+    color: rgb(17, 0, 255);
+}
