@@ -8,3 +8,12 @@ function sendEmail() {
     document.getElementById("subject").value = ""
     document.getElementById("message").value = ""
 }
+
+function deactiveVanillaTilt(){
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var tiltList = document.getElementsByClassName("img-projeto")
+        for (var i = 0; i < tiltList.length; i++) {
+            tiltList[i].vanillaTilt.destroy();
+        }
+    }
+}

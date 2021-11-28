@@ -2,7 +2,7 @@
 
 <head>
     <style>
-        #imagem-parallax{
+        #imagem-fundo{
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="imagem-parallax" style="color: #00000000;">
+    <div class="container-fluid" id="imagem-fundo" style="color: #00000000;">
         <p>1</p>
         <p>0</p>
         <p>1</p>
@@ -22,9 +22,9 @@
     <script>
         randomImg = Math.floor(Math.random() * (5 - 1) + 1)
         if(randomImg == 1){
-            document.getElementById("imagem-parallax").style.backgroundImage = `url('img/parallax/1.gif')`
+            document.getElementById("imagem-fundo").style.backgroundImage = `url('img/fundo/1.gif')`
         }else{
-            document.getElementById("imagem-parallax").style.backgroundImage = `url('img/parallax/${randomImg}.jpg')`
+            document.getElementById("imagem-fundo").style.backgroundImage = `url('img/fundo/${randomImg}.jpg')`
         }
     </script>
 </body>
