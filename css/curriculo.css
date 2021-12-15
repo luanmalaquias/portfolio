@@ -1,5 +1,5 @@
 ul{
-    list-style-type: "> ";
+    list-style-type: " ";
 }
 
 #div-competencias{
@@ -26,4 +26,25 @@ ul{
 
 #div-icons-competencias{
     border-radius: 50px;
+}
+
+#b-top, #b-top-left, #b-top-right, #b-left, #b-center, #b-right, #b-bot-right, #b-bot-left, #b-bot{
+    border-left: 0;
+    border-top: 0;
+}
+
+#b-top, #b-top-left, #b-top-right{
+    border-top: 0;
+}
+
+#b-top-left, #b-left, #b-bot-left{
+    border-left: 0;
+}
+
+#b-bot-left, #b-bot-right, #b-bot{
+    border-bottom: 0;
+}
+
+#b-bot-right, #b-right, #b-top-right{
+    border-right: 0;
 }

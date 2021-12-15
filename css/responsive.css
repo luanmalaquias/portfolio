@@ -14,4 +14,9 @@
     #nome{
         font-weight: 600;
     }
+
+    .bi, .btn-velha{
+        font-size: 3rem !important;
+    }
+    
 }

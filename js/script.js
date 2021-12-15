@@ -17,3 +17,14 @@ function deactiveVanillaTilt(){
         }
     }
 }
+
+function changeAnimationState(){
+    cb = document.getElementById('cb-animacao')
+    if(cb.checked){
+        document.getElementById("canvas") .style = 'display: block !important';
+    } else {
+        document.getElementById("canvas") .style = 'display: none !important';
+    }
+}
+
+deactiveVanillaTilt()

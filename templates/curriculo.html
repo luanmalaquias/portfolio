@@ -6,9 +6,29 @@
 <body>
     <div class="container-sm-fluid container-lg px-sm-5 px-lg-5 py-5">
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <h2 style="font-size: 80px;">Currículo</h2>
                 <span><i class="bi bi-geo-alt-fill"></i> João Pessoa - Paraíba</span>
+            </div>
+            <div class="col-12 col-lg-6 text-center mb-lg-2">
+                <span>Consegue me vencer?</span>
+                <div class="col">
+                    <button class="btn btn-outline-primary btn-velha" id="b-top-left" onclick="chooseBtn('b-top-left')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-top" onclick="chooseBtn('b-top')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-top-right" onclick="chooseBtn('b-top-right')">  </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-outline-primary btn-velha" id="b-left" onclick="chooseBtn('b-left')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-center" onclick="chooseBtn('b-center')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-right" onclick="chooseBtn('b-right')">  </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-outline-primary btn-velha" id="b-bot-left" onclick="chooseBtn('b-bot-left')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-bot" onclick="chooseBtn('b-bot')">  </button> 
+                    <button class="btn btn-outline-primary btn-velha" id="b-bot-right" onclick="chooseBtn('b-bot-right')">  </button>
+                </div>
+                <span id="placar">Luan: 0 Visitante: 0</span>
+                <p id="avisos"></p>
             </div>
         </div>
         <div class="row text-justify">
@@ -18,7 +38,7 @@
                 <!--Perfil-->
                 <div class="row py-3">
                     <div class="col-sm-12 col-lg-3">
-                        <h5>Perfil</h5>
+                        <h5><span><em>Perfil</em></span></h5>
                     </div>
                     <div class="col-sm-12 col-lg-9">
                         <span>Colaborar em um ambiente de trabalho na área de
@@ -32,7 +52,7 @@
                 <!--Educação-->
                 <div class="row py-3">
                     <div class="col-sm-12 col-lg-3">
-                        <h5>Educação</h5>
+                        <h5><span><em>Educação</em></span></h5>
                     </div>
                     <div class="col-sm-12 col-lg-9">
                         <span>
@@ -48,7 +68,7 @@
                 <!--Exp Profissional-->
                 <div class="row py-3">
                     <div class="col-sm-12 col-lg-3">
-                        <h5>Experiência</h5>
+                        <h5><spam><em>Experiência</em></spam></h5>
                     </div>
                     <div class="col-sm-12 col-lg-9">
                         <span>
@@ -73,7 +93,7 @@
                 <hr>
                 <div class="row py-3">
                     <div class="col-sm-12 col-lg-3">
-                        <h5>Certificações</h5>
+                        <h5><spam><em>Certificações</em></spam></h5>
                     </div>
                     <div class="col-sm-12 col-lg-9">
                         <em>
@@ -121,7 +141,7 @@
                 <hr>
                 <div class="row py-3">
                     <div class="col-sm-12 col-lg-3">
-                        <h5>Diploma</h5>
+                        <h5><spam><em>Diploma</em></spam></h5>
                     </div>
                     <div class="col-sm-12 col-lg-9">
                         <em>
@@ -147,40 +167,6 @@
 
             <!--Coluna Direita-->
             <div class="col-sm-12 col-lg-5 py-3" id="div-competencias">
-                <!--Linguagens-->
-                <div class="row">
-                    <div class="col">
-                        <h5><span>Linguagens</span></h5>
-                        <hr class="bg-secondary">
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>HTML / CSS / JS</li>
-                            <li>Dart</li>
-                            <li>Ruby</li>
-                            <li>C</li>
-                        </ul>
-                        <h5><span>Frameworks</span></h5>
-                        <hr class="bg-secondary">
-                        <ul>
-                            <li>Django</li>
-                            <li>Flask</li>
-                            <li>Spring Boot, Spring Web Dependency</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        <h5><span>Mobile</span></h5>
-                        <hr class="bg-secondary">
-                        <ul>
-                            <li>Flutter</li>
-                        </ul>
-                        <h5><span>Database</span></h5>
-                        <hr class="bg-secondary">
-                        <ul>
-                            <li>Sql / Sqlite</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                    </div>
-                </div>
                 <!--Icones-->
                 <div class="row my-4 d-flex justify-content-center">
                     <div class="row bg-white py-2 px-4 text-dark" id="div-icons-competencias">
@@ -207,10 +193,46 @@
                         </div>
                     </div>
                 </div>
+                <!--Linguagens-->
+                <div class="row">
+                    <div class="col">
+                        <h5><span>Linguagens</span></h5>
+                        <hr class="bg-secondary">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>HTML / CSS / JS</li>
+                            <li>Dart</li>
+                            <li>Ruby</li>
+                            <li>C</li>
+                        </ul>
+                        <h5><span>Frameworks</span></h5>
+                        <hr class="bg-secondary">
+                        <ul>
+                            <li>Django</li>
+                            <li>REST Framework</li>
+                            <li>Flask</li>
+                            <li>Spring Boot with Spring Web Dependency</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <h5><span>Mobile</span></h5>
+                        <hr class="bg-secondary">
+                        <ul>
+                            <li>Flutter</li>
+                        </ul>
+                        <h5><span>Database</span></h5>
+                        <hr class="bg-secondary">
+                        <ul>
+                            <li>Sql</li>
+                            <li>SqLite</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>                
                 <!--Conhecimentos-->
                 <div class="row">
                     <div class="col">
-                        <h5>Conhecimentos</h5>
+                        <h5><span>Conhecimentos</span></h5>
                         <hr class="bg-secondary">
                         </p>
                         <ul>
@@ -234,6 +256,7 @@
             </div>
         </div>
     </div>
+    <script src="js/velha.js"></script>
 </body>
 
 </html>

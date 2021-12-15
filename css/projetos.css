@@ -12,3 +12,13 @@
     box-shadow: 0 10px 5px #353535;
     filter: none;
 }
+
+@media (max-width: 1000px){
+    .img-projeto{
+        filter: none;
+    }
+
+    .img-projeto:hover{
+        box-shadow: none;
+    }
+}
