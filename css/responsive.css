@@ -18,5 +18,10 @@
     .bi, .btn-velha{
         font-size: 3rem !important;
     }
+
+    .btn-velha{
+        width: 2em;
+        height: 2em;
+    }
     
 }

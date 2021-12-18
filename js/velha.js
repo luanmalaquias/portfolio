@@ -3,7 +3,7 @@ var ptVisitante = 0;
 var gamePaused = false;
 var turn = 1
 
-var msgsVictory = ["Heheheha! 😁", "Ja sabia 😏", "Ops.. 👀", "Venci 😄", "Ta facil 🙄", "😙", "Ihh.. 🤔"]
+var msgsVictory = ["Heheheha! 😁", "Ja sabia 😏", "Ops.. 👀", "Venci 😄", "Ta facil 🙄", "😙", "Ihh.. 🤔", "Põe no 'hard' pfvr 😅"]
 var msgsYouBeatMe = ["Um oponente digno!", "Impossível! 😮", "Ta xitado 😡", "Você é bom 🙂", "Grrr", "😣", "🤬"]
 
 var map = [
@@ -260,8 +260,8 @@ function brain(){
     if(map[1]==1){
         if(map[6]==1){
             if(map[0]==8) return 0
-            if(map[3]==8) return 2
-            if(map[2]==8) return 3
+            if(map[2]==8) return 2
+            if(map[3]==8) return 3
         }else if(map[8]==1){
             if(map[2]==8) return 2
             if(map[5]==8) return 5

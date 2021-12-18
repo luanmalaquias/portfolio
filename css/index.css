@@ -91,3 +91,35 @@ input:checked + .slider:before {
 }
 
 /* //switch */
+
+.anim{
+    opacity: 0;
+    transition: 1s;
+}
+
+.anim-start{
+    opacity: 100;
+    animation: anim-start .5s normal;
+}
+
+@keyframes anim-start {
+    from{
+        transform: translateY(200px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+#float-contact{
+    display: none !important;
+    transition: 1s all;
+    animation: fade-in 1s normal;
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 100%;
+    }
+}
